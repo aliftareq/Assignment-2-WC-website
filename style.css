@@ -4,7 +4,7 @@
 body {
     font-family: 'Lobster', cursive;
     margin: 0px;
-    /* border: 2px solid gold; */
+    border: 2px solid gold;
 
 }
 
@@ -13,7 +13,7 @@ body {
  -------------------*/
 .main {
     margin: 5vw 5vw;
-    /* border: 3px solid indigo; */
+    border: 3px solid indigo;
 }
 
 /* ---------------------
@@ -21,14 +21,14 @@ top-banner styling part
 ------------------------ */
 
 .Top-banner {
-    /* border: 2px solid yellow; */
+    border: 2px solid yellow;
     display: flex;
     background-color: #161616;
     border-radius: 3%;
 }
 
 .banner-part1 {
-    /* border: 2px solid green; */
+    border: 2px solid green;
     color: white;
     width: 50%;
     font-family: 'Times New Roman', Times, serif;
@@ -55,7 +55,7 @@ top-banner styling part
 }
 
 .banner-part2 {
-    /* border: 2px solid green; */
+    border: 2px solid green;
     width: 50%;
     /* padding-top: 10px;
     padding-right: 70px; */
@@ -70,13 +70,13 @@ top-banner styling part
  middle-section styling part 
 ---------------------------- */
 .middle-section {
-    /* border: 2px solid yellow; */
+    border: 2px solid yellow;
     display: flex;
     margin-top: 5%;
 }
 
 .menubar {
-    /* border: 2px solid green; */
+    border: 2px solid green;
     background-color: #161616;
     color: white;
     margin-bottom: 80%;
@@ -86,7 +86,7 @@ top-banner styling part
 }
 
 .menu-name {
-    /* border: 2px solid fuchsia; */
+    border: 2px solid fuchsia;
     background-color: white;
     color: black;
     width: 252px;
@@ -108,14 +108,14 @@ top-banner styling part
 }
 
 .blogs {
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
 .blog {
-    /* border: 2px solid red; */
+    border: 2px solid red;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
 }
@@ -148,7 +148,7 @@ top-banner styling part
  last-section styling part 
 -------------------------- */
 .last-section {
-    /* border: 2px solid burlywood; */
+    border: 2px solid burlywood;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,7 +157,7 @@ top-banner styling part
 }
 
 .last-section-button {
-    /* border: 2px solid green; */
+    border: 2px solid green;
     width: 200px;
     height: 50px;
 }
@@ -194,7 +194,7 @@ footer {
 }
 
 .footer-menus {
-    /* border: 2px solid darkorange; */
+    border: 2px solid darkorange;
     display: flex;
     justify-content: space-evenly;
     margin: 20px 40px;
@@ -202,6 +202,7 @@ footer {
 }
 
 .footer-icons {
+    border: 2px solid lawngreen;
     display: flex;
     justify-content: space-around;
     margin: 20px 500px;
@@ -215,6 +216,11 @@ footer {
 -------------------------------  */
 
 @media screen and (max-width:576px) {
+
+    /* body section */
+    body {
+        margin: 0px;
+    }
 
     /* top banner  */
     .Top-banner {
@@ -269,6 +275,11 @@ footer {
 }
 
 @media screen and (min-width:577px) and (max-width:992px) {
+
+    /* body section */
+    body {
+        margin: 0px;
+    }
 
     /* top banner  */
     .Top-banner {
