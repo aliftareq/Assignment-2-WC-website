@@ -88,6 +88,11 @@ top-banner styling part
     border-radius: 5px;
 }
 
+.menubar a {
+    text-decoration: none;
+    display: block;
+}
+
 .menu-name {
     /* border: 2px solid fuchsia; */
     background-color: white;
@@ -344,6 +349,10 @@ footer {
         background-color: white;
         display: flex;
         margin-bottom: 10%;
+    }
+
+    .menu-name {
+        width: 23.5vw;
     }
 
     #menu-tab-mob1 {
