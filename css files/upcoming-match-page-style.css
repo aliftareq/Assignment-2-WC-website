@@ -27,6 +27,10 @@ top-banner styling part
     border-radius: 3%;
 }
 
+.Top-banner:hover {
+    background-color: #ff9966;
+}
+
 .banner-part1 {
     /* border: 2px solid green; */
     color: white;
@@ -55,6 +59,7 @@ top-banner styling part
     background-color: #DD0000;
     border-radius: 5px;
     /* border: none; */
+    animation: jumping-color 4s infinite;
 }
 
 .banner-part2 {
@@ -405,5 +410,17 @@ footer {
 
     .footer-icons {
         display: none;
+    }
+}
+
+/* animation styling  */
+
+@keyframes jumping-color {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: yellow;
     }
 }
