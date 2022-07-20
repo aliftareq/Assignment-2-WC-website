@@ -4,6 +4,7 @@
 body {
     font-family: 'Lobster', cursive;
     margin: 0px;
+    /* border: 2px solid gold; */
 
 }
 
@@ -11,7 +12,8 @@ body {
     style for main
  -------------------*/
 .main {
-    margin: 40px 80px;
+    margin: 5vw 5vw;
+    /* border: 3px solid indigo; */
 }
 
 /* ---------------------
@@ -22,7 +24,7 @@ top-banner styling part
     /* border: 2px solid yellow; */
     display: flex;
     background-color: #161616;
-    border-radius: 10px;
+    border-radius: 3%;
 }
 
 .banner-part1 {
@@ -30,7 +32,7 @@ top-banner styling part
     color: white;
     width: 50%;
     font-family: 'Times New Roman', Times, serif;
-    padding-left: 150px;
+    padding-left: 15%;
 }
 
 .banner-part1 h1 {
@@ -55,8 +57,9 @@ top-banner styling part
 .banner-part2 {
     /* border: 2px solid green; */
     width: 50%;
-    padding-top: 10px;
-    padding-right: 70px;
+    /* padding-top: 10px;
+    padding-right: 70px; */
+    padding: 2% 5%;
 }
 
 .banner-part2 img {
@@ -69,16 +72,16 @@ top-banner styling part
 .middle-section {
     /* border: 2px solid yellow; */
     display: flex;
-    margin-top: 100px;
+    margin-top: 5%;
 }
 
 .menubar {
     /* border: 2px solid green; */
     background-color: #161616;
     color: white;
-    margin-bottom: 850px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-bottom: 80%;
+    margin-left: 2%;
+    margin-right: 2%;
     border-radius: 5px;
 }
 
@@ -141,11 +144,40 @@ top-banner styling part
     margin-left: 15px;
 }
 
+/* ------------------------
+ last-section styling part 
+-------------------------- */
+.last-section {
+    /* border: 2px solid burlywood; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    display: none;
+}
+
+.last-section-button {
+    /* border: 2px solid green; */
+    width: 200px;
+    height: 50px;
+}
+
+.last-section button {
+    border: none;
+    width: 200px;
+    height: 50px;
+    background-color: #DD0000;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+}
+
 /* -------------------
  footer styling part
 ---------------------- */
 footer {
-    /* border: 2px solid salmon; */
+    border: 2px solid black;
     background-color: #161616;
     color: white;
 }
@@ -153,8 +185,8 @@ footer {
 .footer-title {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .footer-hr hr {
@@ -162,10 +194,11 @@ footer {
 }
 
 .footer-menus {
+    /* border: 2px solid darkorange; */
     display: flex;
     justify-content: space-evenly;
     margin: 20px 40px;
-    /* border: 2px solid darkorange; */
+
 }
 
 .footer-icons {
@@ -174,4 +207,136 @@ footer {
     margin: 20px 500px;
     font-size: 30px;
     color: orange;
+}
+
+
+/* ------------------------------
+ Media queary for mobile device
+-------------------------------  */
+
+@media screen and (max-width:576px) {
+
+    /* top banner  */
+    .Top-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-part1 {
+        width: 80%;
+    }
+
+    .banner-part2 {
+        width: 80%;
+        align-items: center;
+    }
+
+    /* middle-section  */
+
+    .middle-section {
+        flex-direction: column;
+    }
+
+    .menubar {
+        background-color: white;
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu-tab-mob1 {
+        border: 2px solid grey;
+    }
+
+    #menu-tab-mob2 {
+        border: 2px solid grey;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* footer section */
+    .footer-menus {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-icons {
+        display: none;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+
+    /* top banner  */
+    .Top-banner {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .banner-part1 {
+        width: 80%;
+    }
+
+    .banner-part1 h1 {
+        font-size: 300%;
+    }
+
+    .banner-part1 p {
+        font-size: 100%;
+    }
+
+    .banner-part1 button {
+        margin-bottom: 15%;
+    }
+
+    .banner-part2 {
+        width: 80%;
+        align-items: center;
+    }
+
+    /* middle-section  */
+
+    .middle-section {
+        flex-direction: column;
+    }
+
+    .menubar {
+        background-color: white;
+        display: flex;
+        margin-bottom: 10%;
+    }
+
+    #menu-tab-mob1 {
+        border: 2px solid grey;
+    }
+
+    #menu-tab-mob2 {
+        border: 2px solid grey;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .extra-article {
+        display: none;
+    }
+
+    /* last section style */
+    .last-section {
+        display: flex;
+    }
+
+    /* footer section */
+    .footer-menus {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .footer-icons {
+        display: none;
+    }
 }
